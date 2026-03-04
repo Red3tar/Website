@@ -28,11 +28,19 @@ const projects = [
     },
 */    
     {
+        title: "Real-Estate Web Scraper",
+        description: "An AI powered web scraper built with Python to extract real estate listings from various housing websites. The web scraper features a built in CAPTCHA solver to ensure information is extracted. Ollama LLM is used to interface with the user and parse through extracted content.",
+        youtube: "ZoavBkLMd8g",
+    },    
+
+    {
         title: "VSiD - Canyon Research Labs",
         description: "AI powered very small image detection system to detect thumbs up and thumbs down hand gestures via a live camera feed. The model will be deployed to an ESP32 microcontroller and is overseen by Canyon Research Labs. For more information, visit the VSiD website linked above.",
         link: "https://aigcu.github.io/VSiD-website/",
         image: "assets/VSiD.png",
     },
+
+    
 ];
 
 
@@ -91,13 +99,24 @@ function renderProjects() {
                </a>`
             : "";
 
+        const websiteBtnDemo = p.linkDemo
+            ? `<a class="project-website-btn" href="${p.linkDemo}" target="_blank" rel="noopener noreferrer">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                       <circle cx="12" cy="12" r="10"/>
+                       <line x1="2" y1="12" x2="22" y2="12"/>
+                       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                   </svg>
+                   Try it Out
+               </a>`
+            : "";
+
         return `
         <article class="project-card" style="animation-delay: ${i * 0.1}s">
             ${media}
             <div class="project-body">
                 <div class="project-title-row">
                     <h2 class="project-title">${p.title}</h2>
-                    <div class="project-btn-group">${githubBtn}${websiteBtn}</div>
+                    <div class="project-btn-group">${githubBtn}${websiteBtn}${websiteBtnDemo}</div>
                 </div>
                 <div class="project-divider"></div>
                 <p class="project-desc">${p.description}</p>

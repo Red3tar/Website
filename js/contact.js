@@ -22,7 +22,7 @@ form.addEventListener("submit", e => {
 
     // Show a confirmation message after a short delay
     setTimeout(() => {
-        status.textContent = "Outlook will open to send your message.Thanks for reaching out!";
+        status.textContent = "Outlook will open to send your message. Thanks for reaching out!";
         form.reset();
     }, 500);
 });
