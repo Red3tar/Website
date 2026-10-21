@@ -35,12 +35,38 @@ const projects = [
 
     {
         title: "VSiD - Canyon Research Labs",
-        description: "AI powered very small image detection system to detect thumbs up and thumbs down hand gestures via a live camera feed. The model will be deployed to an ESP32 microcontroller and is overseen by Canyon Research Labs. For more information, visit the VSiD website linked above.",
+        description: "A very small image detection system to detect thumbs up and thumbs down hand gestures via a live camera feed. The model will be deployed to an ESP32 microcontroller and is overseen by Canyon Research Labs. For more information, visit the VSiD website linked above.",
         link: "https://aigcu.github.io/VSiD-website/",
         image: "assets/VSiD.png",
     },
 
+
+    {
+        title: "Facial Emotion Detector",
+        description: "An image recognition system that detects emotion based on facial expressions. Utilizes Streamlit for deployable UI and a Convolutional Neural Network architecture.",
+        image: "assets/FCNN1.png",
+    },
     
+    {
+        title:"TALON AI",
+        description: "An LLM removing the limitations of general knowledge in Agentic AI, where the agent prioritizes and indexes lecture content and textbooks imported by the user in its responses.",
+        image: "assets/TALON1.png",
+    },
+
+    {
+        title:"BCI Thought to Text - Canyon Research Labs",
+        description: "An AI based project that reads EEG waves from the brain and converts them to text. The text is then pushed to a TTS model to output the thoughts from a user using a speaker.",
+        link:"https://aigcu.github.io/BCI-website/",
+        image: "assets/BCI1.png",
+    },
+
+    {
+        title:"GCU CET Computer Vision Counter",
+        description: "A Computer Vision AI that detects and counts objects in real time. The image detection software was built in Tensorflow and given to the Engineering team to finish deployment and implementation of this system in the assembly line arena.",
+        link:"https://red3tar.github.io/ComputerVisionWebsite/",
+        image: "assets/obj1.png",
+    },
+
 ];
 
 
