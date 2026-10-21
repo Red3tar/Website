@@ -55,7 +55,7 @@ const projects = [
 
     {
         title:"BCI Thought to Text - Canyon Research Labs",
-        description: "An AI based project that reads EEG waves from the brain and converts them to text. The text is then pushed to a TTS model to output the thoughts from a user using a speaker.",
+        description: "An AI based project that reads EEG waves from the brain and converts them to text. The text is then pushed to a TTS model to output the thoughts from a user on a speaker.",
         link:"https://aigcu.github.io/BCI-website/",
         image: "assets/BCI1.png",
     },
